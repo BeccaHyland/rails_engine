@@ -4,12 +4,12 @@ namespace :import do
   desc "import all data from CSV files"
   task all: :environment do
 
-    Merchant.destroy_all
     Item.destroy_all
     Invoice.destroy_all
     InvoiceItem.destroy_all
     Customer.destroy_all
     Transaction.destroy_all
+    Merchant.destroy_all
 
     CSV.foreach('./data/merchants.csv', headers: true, header_converters: :symbol) do |row|
       if row[:id] && row[:name] && row[:created_at] && row[:updated_at]

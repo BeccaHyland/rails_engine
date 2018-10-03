@@ -4,12 +4,14 @@ namespace :import do
   desc "import all data from CSV files"
   task all: :environment do
 
+    puts 'Please wait while database is cleared of existing records...'
+    InvoiceItem.destroy_all
     Item.destroy_all
     Invoice.destroy_all
-    InvoiceItem.destroy_all
     Customer.destroy_all
     Transaction.destroy_all
     Merchant.destroy_all
+    puts "Database cleared\nCreating Merchants..."
 
     CSV.foreach('./data/merchants.csv', headers: true, header_converters: :symbol) do |row|
       if row[:id] && row[:name] && row[:created_at] && row[:updated_at]
@@ -21,6 +23,7 @@ namespace :import do
         )
       end
     end
+    puts "Created #{Merchant.count} Merchants\nCreating Customers..."
 
     CSV.foreach('./data/customers.csv', headers: true, header_converters: :symbol) do |row|
       if row[:id] && row[:first_name] && row[:last_name] && row[:created_at] && row[:updated_at]
@@ -33,6 +36,7 @@ namespace :import do
         )
       end
     end
+    puts "Created #{Customer.count} Customers\nCreating Invoices..."
 
 
     CSV.foreach('./data/invoices.csv', headers: true, header_converters: :symbol) do |row|
@@ -47,6 +51,7 @@ namespace :import do
         )
       end
     end
+    puts "Created #{Invoice.count} Invoices\nCreating Items..."
 
     CSV.foreach('./data/items.csv', headers: true, header_converters: :symbol) do |row|
       if row[:id] && row[:name] && row[:description] && row[:unit_price] && row[:merchant_id] && row[:created_at] && row[:updated_at]
@@ -61,6 +66,7 @@ namespace :import do
         )
       end
     end
+    puts "Created #{Item.count} Items\nCreating InvoiceItems..."
 
     CSV.foreach('./data/invoice_items.csv', headers: true, header_converters: :symbol) do |row|
       if row[:id] && row[:item_id] && row[:invoice_id] && row[:quantity] && row[:unit_price] && row[:created_at] && row[:updated_at]
@@ -75,6 +81,7 @@ namespace :import do
         )
       end
     end
+    puts "Created #{InvoiceItem.count} InvoiceItems\nCreating Transactions..."
 
     CSV.foreach('./data/transactions.csv', headers: true, header_converters: :symbol) do |row|
       if row[:id] && row[:invoice_id] && row[:credit_card_number] && row[:result] && row[:created_at] && row[:updated_at]
@@ -88,5 +95,6 @@ namespace :import do
         )
       end
     end
+    puts "Created #{Transaction.count} Transactions"
   end
 end

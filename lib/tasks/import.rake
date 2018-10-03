@@ -77,12 +77,11 @@ namespace :import do
     end
 
     CSV.foreach('./data/transactions.csv', headers: true, header_converters: :symbol) do |row|
-      if row[:id] && row[:invoice_id] && row[:credit_card_number] && row[:credit_card_expiration_date] && row[:result] && row[:created_at] && row[:updated_at]
+      if row[:id] && row[:invoice_id] && row[:credit_card_number] && row[:result] && row[:created_at] && row[:updated_at]
         Transaction.create!(
           id:                           row[:id],
           invoice_id:                   row[:invoice_id],
           credit_card_number:           row[:credit_card_number],
-          credit_card_expiration_date:  row[:credit_card_expiration_date],
           result:                       row[:result],
           created_at:                   row[:created_at],
           updated_at:                   row[:updated_at]

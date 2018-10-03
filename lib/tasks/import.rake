@@ -5,11 +5,11 @@ namespace :import do
   task all: :environment do
 
     puts 'Please wait while database is cleared of existing records...'
+    Transaction.destroy_all
     InvoiceItem.destroy_all
     Item.destroy_all
     Invoice.destroy_all
     Customer.destroy_all
-    Transaction.destroy_all
     Merchant.destroy_all
     puts "Database cleared\nCreating Merchants..."
 

@@ -6,7 +6,7 @@
         1,
         1,
         null,
-        22,
+        28,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/app/models/application_record.rb": [
@@ -35,7 +35,7 @@
         1,
         1,
         null,
-        11,
+        18,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/models/invoice_spec.rb": [
@@ -62,7 +62,7 @@
         1,
         1,
         null,
-        20,
+        26,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/models/item_spec.rb": [
@@ -87,7 +87,7 @@
         1,
         1,
         null,
-        16,
+        23,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/models/merchant_spec.rb": [
@@ -108,8 +108,35 @@
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        0,
         null,
         null,
         null,
@@ -122,7 +149,7 @@
         1,
         1,
         null,
-        31,
+        41,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/models/transaction_spec.rb": [
@@ -138,7 +165,7 @@
         1,
         1,
         null,
-        8,
+        15,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/requests/api/v1/customers_request_spec.rb": [
@@ -380,6 +407,6 @@
         null
       ]
     },
-    "timestamp": 1538611676
+    "timestamp": 1538613180
   }
 }

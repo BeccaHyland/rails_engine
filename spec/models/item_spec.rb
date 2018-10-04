@@ -9,5 +9,6 @@ describe Item, type: :model do
 
   describe 'associations' do
     it {should belong_to(:merchant)}
+    it {should have_many(:invoice_items)}
   end
 end

@@ -30,5 +30,18 @@ describe 'merchant search API' do
     expect(response.body).to include("#{merchant2.id}")
     expect(response.body).to_not include("#{merchant3.id}")
   end
+end
 
+describe 'random merchant API' do
+  it 'returns one random merchant' do
+    merchant1, merchant2, merchant3 = create_list(:merchant, 3)
+
+    get "/api/v1/merchants/random"
+
+    random_row = JSON.parse(response.body)
+
+    expect(response).to be_successful
+    expect(random_row.keys).to contain_exactly("id", "name")
+    expect(random_row["id"]).to eq(merchant1.id).or eq(merchant2.id).or eq(merchant3.id)
+  end
 end

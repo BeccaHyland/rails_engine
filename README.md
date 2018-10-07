@@ -12,15 +12,17 @@
 #### Ruby version `2.4.2`Rails version `5.2.1`
 
 After cloning down this repo, `bundle` the Gemfile and rails `db:{create,migrate}`
+
 To seed the database, run `rake import:all`
+
 To make API requests, boot up a local server with `rails s`, then in your browser try one of the following:
 
-All merchants' data:
+**All merchants' data:
 
 `/api/v1/merchants`
 
 
-Search for one particular merchant by name, id, time created at, or time last updated at:
+**Search for one particular merchant by name, id, time created at, or time last updated at:
 
 `/api/v1/merchants/find?name=enter merchant name here`
 
@@ -32,11 +34,11 @@ Search for one particular merchant by name, id, time created at, or time last up
 Use the above options to find multiple merchants by changing `find?` to `find_all?`
 
 
-All items belonging to particular merchant's store:
+**All items belonging to particular merchant's store:
 
 `/api/v1/merchants/enter a merchant id here/items`
 
-The Top merchants by revenue earned:
+**The Top merchants by revenue earned:
 
 `/api/v1/merchants/most_revenue?quantity=enter a number here of how many merchants to be returned`
 

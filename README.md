@@ -1,4 +1,4 @@
-## Rails Engine: Documentation
+## Rails Engine API
 
 #### Rails Engine is a Ruby on Rails API for e-commerce data. For all merchants in the database, you can query the API and receive data on:
 

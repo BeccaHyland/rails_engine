@@ -91,7 +91,7 @@
         1,
         1,
         null,
-        30,
+        36,
         null
       ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/models/merchant_spec.rb": [
@@ -183,7 +183,7 @@
         1,
         1,
         null,
-        62,
+        68,
         null,
         1,
         null,
@@ -376,6 +376,26 @@
         null,
         null
       ],
+      "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/requests/api/v1/merchants/relationships_request_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/spec/requests/api/v1/merchants/search_request_spec.rb": [
         1,
         null,
@@ -541,6 +561,13 @@
         1,
         null
       ],
+      "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/app/controllers/api/v1/merchants/items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/beccahyland/turing/3module/projects/1proj_files/rails_engine/app/controllers/api/v1/merchants/search_controller.rb": [
         1,
         1,
@@ -588,6 +615,6 @@
         null
       ]
     },
-    "timestamp": 1538854387
+    "timestamp": 1538856222
   }
 }

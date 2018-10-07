@@ -47,4 +47,4 @@ Use the above options to find multiple merchants by changing `find?` to `find_al
 
 `/api/v1/merchants/most_revenue?quantity=enter a number here of how many merchants to be returned`
 
-This query will return the highest merchant first, and so on (descending order).
+This query will return the highest revenue merchant first, and so on (descending order).

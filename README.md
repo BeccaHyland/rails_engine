@@ -17,7 +17,7 @@ To run the test suit, from the terminal enter `rspec`
 
 To seed the database, run `rake import:all`
 
-To make API requests, boot up a local server with `rails s`, then in your browser try one of the following:
+To make API requests, boot up a local server with `rails s`, then in your browser, after `localhost:3000`, try one of the following:
 
 **All merchants' data:**
 

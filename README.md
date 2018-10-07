@@ -13,6 +13,8 @@
 
 After cloning down this repo, `bundle` the Gemfile and rails `db:{create,migrate}`
 
+To run the test suit, from the terminal enter `rspec`
+
 To seed the database, run `rake import:all`
 
 To make API requests, boot up a local server with `rails s`, then in your browser try one of the following:
@@ -46,6 +48,3 @@ Use the above options to find multiple merchants by changing `find?` to `find_al
 `/api/v1/merchants/most_revenue?quantity=enter a number here of how many merchants to be returned`
 
 This query will return the highest merchant first, and so on (descending order).
-
-
-To run the test suit, from the terminal enter `rspec`

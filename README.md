@@ -9,7 +9,7 @@
 * All items belonging to a particular merchant's store
 * The top merchants by total revenue earned, customize the number you want to be returned
 
-
+### Setup
 #### Ruby version `2.4.2`Rails version `5.2.1`
 
 After cloning down this repo, `bundle` the Gemfile and rails `db:{create,migrate}`
@@ -18,8 +18,8 @@ To run the test suit, from the terminal enter `rspec`
 
 To seed the database, run `rake import:all`
 
-
-To make API requests, boot up a local server with `rails s`, then in your browser, after `localhost:3000`, try one of the following:
+### Endpoints
+To make API requests, after setup, boot up a local server with `rails s`, then in your browser, after `localhost:3000`, try one of the following:
 
 **All merchants' data:**
 

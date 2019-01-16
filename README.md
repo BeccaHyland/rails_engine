@@ -1,6 +1,6 @@
 ## Rails Engine API
 
-#### Rails Engine is a Ruby on Rails API for e-commerce data. For merchants in the database, you can query the API and receive data on:
+#### Rails Engine is a Ruby on Rails API for e-commerce data. For merchants in the database, you can query the API (powered by ActiveRecord!) and receive data on:
 
 * All merchants (id, name)
 * Any one particular merchant
